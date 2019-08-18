@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PADC_Assign_3</string>
+    <string name="btn_start">START</string>
+    <string name="btn_pause">PAUSE</string>
+    <string name="btn_reset">RESET</string>
+    <string name="calendar_event">CALENDAR EVENT</string>
+    <string name="capture_video">CAPTURE VIDEO</string>
+    <string name="contact">CONTACT</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="link">eg. wwww.padcmyanmar.com.mm</string>
+    <string name="play_video">PLAY VIDEO</string>
+</resources>

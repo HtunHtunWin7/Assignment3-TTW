@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/double_margin"
+                android:gravity="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:onClick="startChronometer"
+                    android:text="@string/btn_start" />
+
+                <Button
+                    android:id="@+id/btn_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chronometer"
+                    android:layout_toEndOf="@+id/btn_start"
+                    android:onClick="pauseChronometer"
+                    android:text="@string/btn_pause" />
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chronometer"
+                    android:layout_toEndOf="@+id/btn_pause"
+                    android:onClick="resetChronometer"
+                    android:text="@string/btn_reset" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_reset"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:onClick="calendarEvent"
+                android:text="@string/calendar_event" />
+
+            <Button
+                android:id="@+id/btn_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="@string/capture_video" />
+
+
+            <Button
+                android:id="@+id/btn_play_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="@string/play_video" />
+
+            <VideoView
+                android:id="@+id/VideoView"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+
+            <Button
+                android:id="@+id/btn_pick_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="@string/contact" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:text="@string/name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/editTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/link">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSearchClick"
+                android:layout_gravity="center"
+                android:text="@string/search" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
